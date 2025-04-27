@@ -2,14 +2,15 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html">
-<head>
+<h:head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Cadastro de Usuário</title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
-</head>
-<body>
-    <h1>Cadastro de Usuário</h1>
-    <form>
+</h:head>
+<h:body>
+<!-- Formulário de cadastro -->
+	<h1>Cadastro de usuário</h1>
+	<h:form id="cadastro">
         <div class="input-group">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" class="input-text"/>
@@ -17,14 +18,14 @@
         <button type="submit">Cadastrar</button>
         <br/>
         <div class="messages"></div>
-    </form>
+    </h:form>
 
     <h2>Usuários Cadastrados:</h2>
-    <table class="user-table">
+    <h:table class="user-table">
         <tr jsf:var="usuario" jsf:value="#{pessoa.nomesCadastrados}">
             <th jsf:facet="header">Nome</th>
             <td></td>
         </tr>
-    </table>
-</body>
+    </h:table>
+</h:body>
 </html>

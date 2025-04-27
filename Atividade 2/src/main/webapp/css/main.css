@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* Estilos gerais para o formulário */
+h:form {
+  display: flex;
+  flex-direction: column;
+  width: 350px; /* Ajuste a largura conforme necessário */
+  padding: 20px;
+  margin: 30px auto; /* Centraliza com mais margem no topo */
+  background-color: #fff; /* Fundo branco */
+  border-radius: 8px; /* Bordas mais arredondadas para o formulário */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+/* Estilos para os labels */
+h:outputLabel {
+  display: block;
+  margin-bottom: 8px; /* Mais espaço abaixo do label */
+  font-weight: bold;
+  color: #333; /* Cor do texto do label mais escura */
+}
+
+/* Estilos para os campos de input */
+.campo-medio {
+  width: 100%;
+  padding: 12px; /* Aumenta o preenchimento interno */
+  margin-bottom: 20px; /* Mais espaço abaixo dos campos */
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Bordas bem arredondadas para os campos */
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #555; /* Cor do texto dentro do input */
+}
+
+/* Estilos para o botão de enviar */
+h:commandButton {
+  background-color: #4CAF50; /* Cor verde semelhante */
+  color: white;
+  padding: 14px; /* Aumenta o preenchimento do botão */
+  border: none;
+  border-radius: 25px; /* Bordas bem arredondadas para o botão */
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; /* Garante que o texto esteja centralizado */
+}
+
+h:commandButton:hover {
+  background-color: #45a049; /* Escurece um pouco ao passar o mouse */
+}
